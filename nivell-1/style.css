@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* VARIABLES */
+:root {
+	--main-color: #232ed1;
+	--second-color: #6564DB;
+	--third-color: #FFD97D;
+	--fourth-color: #E43F6F;
+	--black: #0D1317;
+	--white: #d8d8ec;
+}
+
+/* CSS STYLES*/
+body {
+	margin: 0 auto;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+}
+
+header,
+main,
+footer {
+	border: solid 1rem var(--black);
+	margin-top: 1rem ;
+}
+
+/*HEADER*/
+#ulSide {
+	background-color: var(--second-color);
+	border-bottom: solid 0.5rem var(--black);
+}
+
+ul,
+section {
+	display: flex;
+	padding: 0 1rem;
+}
+
+li {
+	background-color: var(--third-color);
+	color: var(--third-color);
+	border: 1rem;
+}
+
+li,
+h1 {
+	margin: 1rem 0;
+	flex-grow: 1;
+}
+
+h1,
+footer {
+	background-color: var(--second-color);
+	color: var(--second-color);
+}
+
+section {
+	background-color: var(--third-color);
+}
+
+#mid {
+	flex-grow: 4;
+	margin: 1rem 1rem;
+}
+
+/*CONTENT*/
+
+main {
+	display: flex;
+	flex-direction: row;	
+	background-color: var(--second-color);
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 4;
+	padding-top: 1rem;
+	margin: 0;
+}
+
+
+.mainUl {
+margin-bottom: 1rem;
+}
+
+.mainLi {
+	margin: 0;
+}
+.separateLi {
+	margin-right: 1rem;
+} 
+
+aside {
+	border-left: solid 1rem var(--black);
+	background-color: var(--main-color);
+	flex-grow: 1;
+	padding: 0.5rem 1rem;
+}
+
+p {
+	background-color: var(--third-color);
+	margin: 0.5rem 0;
+	color: var(--third-color);
+}
+
+
