@@ -161,3 +161,17 @@ p {
 }
 
 
+
+/*RESPONSIVE*/
+
+@media(max-width: 961px) {
+	main {
+		flex-direction: column;		
+	}
+
+	aside {
+		border: 0;
+		border-top: solid 1rem var(--black);
+	}
+}
+
