@@ -175,4 +175,31 @@ p {
 	}
 }
 
+@media(max-width: 481px) {
 
+	.mainUl,
+	#ulSide {
+		flex-direction: column;
+		
+	}
+	article {
+		padding-top: 1rem;
+	}
+
+	#mid,
+	.separateLi {
+		margin: 0;
+	}
+
+	.separateLi {
+		margin-bottom: 1rem;
+	}
+
+	main {
+		border: solid 1rem var(--fourth-color);
+	} 
+
+	aside {
+		border-top: solid 1rem var(--fourth-color);
+	}
+}
