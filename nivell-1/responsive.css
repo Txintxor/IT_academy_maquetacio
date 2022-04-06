@@ -1,0 +1,24 @@
+/*RESPONSIVE*/
+
+@media(max-width: 961px) {
+	#mainContainer {
+    display:flex;
+		flex-direction: column;
+    border: solid 1rem var(--third-color);		
+	}
+
+  #asideContainer {
+    border: 0;
+    border-top: solid 1rem var(--third-color);
+  }
+
+}
+
+@media(max-width: 481px) {
+
+	#cardContainer {
+    display: flex;
+		flex-direction: column;
+		
+	}
+}

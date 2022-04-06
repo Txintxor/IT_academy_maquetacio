@@ -65,7 +65,7 @@ table {
 	--white: #d8d8ec;
 }
 
-/* CSS STYLES*/
+/* CSS GENERAL STYLES*/
 body {
 	margin: 0 auto;
 	max-width: 1200px;
@@ -74,132 +74,117 @@ body {
 }
 
 header,
-main,
+#mainContainer,
 footer {
 	border: solid 1rem var(--black);
-	margin-top: 1rem ;
+	margin: 1rem 0;
 }
 
 /*HEADER*/
-#ulSide {
+
+#navBar {
+	display: flex;
+	padding: 0 1rem;
 	background-color: var(--second-color);
 	border-bottom: solid 0.5rem var(--black);
 }
 
-ul,
-section {
+#navJumbotron,
+#navBar {
 	display: flex;
 	padding: 0 1rem;
 }
 
-li {
+.navLiSide {
+	flex-grow: 1;
+}
+
+#navLi2 {
+	flex-grow: 5;
+	margin: 1rem 1rem;
+}
+
+#navJumbotron {
+	background-color: var(--third-color);
+}
+
+.navLi {
 	background-color: var(--third-color);
 	color: var(--third-color);
 	border: 1rem;
 }
 
-li,
-h1 {
+.navLi,
+#navJumbotronText {
 	margin: 1rem 0;
 	flex-grow: 1;
 }
 
-h1,
+#navJumbotronText,
 footer {
 	background-color: var(--second-color);
 	color: var(--second-color);
 }
 
-section {
-	background-color: var(--third-color);
-}
-
-#mid {
-	flex-grow: 4;
-	margin: 1rem 1rem;
-}
 
 /*CONTENT*/
 
-main {
+#mainContainer {
 	display: flex;
-	flex-direction: row;	
+	flex-direction: row;
 	background-color: var(--second-color);
 }
 
-article {
-	display: flex;
-	flex-direction: column;
+#main1 {
+	grid-area: main1;
+}
+
+#main2 {
+	grid-area: main2;
+}
+
+#main3 {
+	grid-area: main3;
+}
+
+#main4 {
+	grid-area: main4;
+}
+
+#bottomArticle {
+	background-color: var(--main-color);
+	color: var(--main-color);
+	grid-area: bottomArticle;
+}
+
+.mainArticle {
+	background-color: var(--fourth-color);
+	color: var(--fourth-color);
+
+}
+
+#cardContainer {
+	display: grid;
+	grid-template-areas:
+		"main1 main2"
+		"main3 main4"
+		"bottomArticle bottomArticle";
+	grid-gap: 1rem;
 	flex-grow: 4;
-	padding-top: 1rem;
-	margin: 0;
+	background-color: var(--second-color);
+	padding: 1rem;
 }
 
-
-.mainUl {
-margin-bottom: 1rem;
-}
-
-.mainLi {
-	margin: 0;
-}
-.separateLi {
-	margin-right: 1rem;
-} 
-
-aside {
+#asideContainer {
+	flex-grow: 1;
 	border-left: solid 1rem var(--black);
 	background-color: var(--main-color);
 	flex-grow: 1;
 	padding: 0.5rem 1rem;
 }
 
-p {
+.asideText {
 	background-color: var(--third-color);
 	margin: 0.5rem 0;
 	color: var(--third-color);
-}
-
-
-
-/*RESPONSIVE*/
-
-@media(max-width: 961px) {
-	main {
-		flex-direction: column;		
-	}
-
-	aside {
-		border: 0;
-		border-top: solid 1rem var(--black);
-	}
-}
-
-@media(max-width: 481px) {
-
-	.mainUl,
-	#ulSide {
-		flex-direction: column;
-		
-	}
-	article {
-		padding-top: 1rem;
-	}
-
-	#mid,
-	.separateLi {
-		margin: 0;
-	}
-
-	.separateLi {
-		margin-bottom: 1rem;
-	}
-
-	main {
-		border: solid 1rem var(--fourth-color);
-	} 
-
-	aside {
-		border-top: solid 1rem var(--fourth-color);
-	}
 }
