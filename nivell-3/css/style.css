@@ -63,7 +63,7 @@ a:focus {
   color: var(--black);
 }
 
-a {
+a{
   transition: all .3s;
   color: var(--grey);
 }
@@ -78,7 +78,6 @@ i {
   color: var(--main-color);
 }
 
-
 /* VARIABLES */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
@@ -92,20 +91,20 @@ i {
   --grey3: #adb1b9;
   --white: #e4e4f0;
   --font: 'Josefin Sans', sans-serif;
-
+  
 }
 
 body {
   font-family: var(--font);
   margin: 0 auto;
-  width: 80%;
+  width: 80%;  
 }
 
 
 footer {
   background-color: var(--grey3);
-  width: 90%;
-  text-align: center;
+  width: 100%;
+    text-align: center;
 }
 
 #pFooter {
@@ -114,7 +113,20 @@ footer {
   margin: 0 1rem;
   background-color: var(--grey2);
 }
-
 .fa-copyright {
   margin: .1rem;
+}
+
+/*GRID TEMPLATES*/
+
+#navLogo {
+  grid-area: navLogo;
+}
+
+#navUL {
+  grid-area: navUl;
+}
+
+#headerTittle {
+  grid-area: headerTittle;
 }
