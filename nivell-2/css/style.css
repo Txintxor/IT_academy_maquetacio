@@ -57,14 +57,31 @@ table {
   border-spacing: 0;
 }
 
-a {
+a,
+a:focus {
   text-decoration: none;
+  color: var(--black);
+}
+
+a{
+  transition: all .3s;
+  color: var(--grey);
+}
+
+a:hover {
+  color: var(--black);
+  font-size: 1.5rem;
+}
+
+i {
+  margin: 0 1rem;
+  color: var(--main-color);
 }
 
 
 /* VARIABLES */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-@import url("header.css");
+
 
 :root {
   --main-color: #E06F5F;
@@ -72,8 +89,34 @@ a {
   --black: #140100;
   --grey: #515761;
   --grey2: #15161821;
+  --grey3: #adb1b9;
   --white: #e4e4f0;
   --font: 'Josefin Sans', sans-serif;
+  
+}
+
+body {
+  font-family: var(--font);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
 }
 
 
+footer {
+  background-color: var(--grey3);
+  width: 90%;
+    text-align: center;
+}
+
+#pFooter {
+  font-size: 1.1rem;
+  padding: .75rem;
+  margin: 0 1rem;
+  background-color: var(--grey2);
+}
+.fa-copyright {
+  margin: .1rem;
+}
